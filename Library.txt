@@ -137,10 +137,13 @@ void searchBook(int id2)
     }
     while(temp->next!=NULL)
     {
-        temp=temp->next;
         if(temp->id==id2)
+       {
        printf(" ID : %d  Title : %s  Author : %s  Year :%d \n",temp->id,temp->title, temp->author, temp->year);
-    }
+       }
+       temp=temp->next;
+}
+ printf("Book with ID %d not found in the library\n", id2);
 }
 
 int countBooks()
