@@ -140,6 +140,7 @@ void searchBook(int id2)
         if(temp->id==id2)
        {
        printf(" ID : %d  Title : %s  Author : %s  Year :%d \n",temp->id,temp->title, temp->author, temp->year);
+       return;
        }
        temp=temp->next;
 }
